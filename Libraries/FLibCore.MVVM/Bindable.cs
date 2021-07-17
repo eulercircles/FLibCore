@@ -16,7 +16,7 @@ namespace FLibCore.MVVM
 			}
 		}
 
-		public Bindable(T initialValue) => Value = initialValue;
+		public Bindable(T initialValue = default(T)) => Value = initialValue;
 
 		public void Refresh() => InvokePropertyChangedEvent(nameof(Value));
 	}

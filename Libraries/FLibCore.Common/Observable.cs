@@ -32,9 +32,7 @@ namespace FLibCore.Common
     private readonly SafeEvent<EventArgs> _valueChanged;
     public Event<EventArgs> ValueChanged { get; }
 
-    public Observable() : this(default) { }
-
-    public Observable(T initialValue)
+    public Observable(T initialValue = default(T))
 		{
       _valueChanged = new SafeEvent<EventArgs>();
       ValueChanged = new Event<EventArgs>(_valueChanged);
