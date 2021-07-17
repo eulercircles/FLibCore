@@ -10,7 +10,7 @@ namespace FLibCore.MVVM.WPF
 	{
 		#region Dependency Properties
 		private static readonly DependencyProperty _mediatorProperty
-			= DependencyProperty.Register("Mediator", typeof(IMediator), typeof(ViewModelBase));
+			= DependencyProperty.Register(nameof(Mediator), typeof(IMediator), typeof(ViewModelBase));
 		public IMediator Mediator
 		{
 			get => (IMediator)GetValue(_mediatorProperty);
@@ -18,7 +18,7 @@ namespace FLibCore.MVVM.WPF
 		}
 
 		private static readonly DependencyProperty _dialogProviderProperty
-			= DependencyProperty.Register("Mediator", typeof(IDialogProvider), typeof(ViewModelBase));
+			= DependencyProperty.Register(nameof(DialogProvider), typeof(IDialogProvider), typeof(ViewModelBase));
 		public IDialogProvider DialogProvider
 		{
 			get => (IDialogProvider)GetValue(_dialogProviderProperty);
