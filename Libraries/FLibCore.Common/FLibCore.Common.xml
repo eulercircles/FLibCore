@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FLibCore.Common</name>
+    </assembly>
+    <members>
+        <member name="F:FLibCore.Common.Messages.fParameterIsNotAValidType">
+            <summary>{0} is the required type and {1} is the passed type.</summary>
+        </member>
+        <member name="F:FLibCore.Common.Messages.fUnhandledEnumValue">
+            <summary>{0} is the enum member.</summary>
+        </member>
+        <member name="F:FLibCore.Common.Messages.fValueMustBeBetween">
+            <summary>{0} is the name of the argument, {1} is the lower bound and {2} is the upper bound.</summary>
+        </member>
+        <member name="T:FLibCore.Common.EnumUtilities">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FLibCore.Common.EnumUtilities.GetEnumDescriptions``1">
+            <summary>
+            Reads all the members of an enumeration and returns a dictionary whose keys are either the value of the description attribute for that member or the string equivalent of the member name,
+            and whose values are the enum values that correspond to those descriptions or names. Useful for converting enums to an appropriate format for using in selection lists.
+            </summary>
+            <remarks>Based on blog by Brandon Truong - http://brandontruong.blogspot.com/2010/04/use-enum-as-itemssource.html</remarks>
+        </member>
+        <member name="M:FLibCore.Common.EnumUtilities.GetEnumDescription(System.Reflection.FieldInfo)">
+            <remarks>Based on blog by Brandon Truong - http://brandontruong.blogspot.com/2010/04/use-enum-as-itemssource.html</remarks>
+        </member>
+        <member name="T:FLibCore.Common.SafeEvent`1">
+            <summary>
+            An event wrapper that ensures a handler can only subscribe once to an event.
+            Prevents accidental multiple subscription, leading to unintentional multiple calls of the same event handler.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:FLibCore.Common.SafeEvent`1.Subscribe(System.EventHandler{`0})">
+            <summary>
+            Subscribes the handler method to the event. If the handler method is already subscribed, it will *not* be subscribed again.
+            </summary>
+            <param name="handler">The delegate method that will react to and handle this event.</param>
+        </member>
+        <member name="M:FLibCore.Common.SafeEvent`1.Unsubscribe(System.EventHandler{`0})">
+            <summary>
+            Unsubscribes the handler method from the event.
+            </summary>
+            <param name="handler">The delegate method to unsubscribe from this event.</param>
+        </member>
+        <member name="M:FLibCore.Common.SafeEvent`1.Invoke(System.Object,`0)">
+            <summary>
+            Invokes the event.
+            </summary>
+            <param name="sender">The object that is invoking the event.</param>
+            <param name="args">Optional arguments to pass with the event invocation.</param>
+        </member>
+        <member name="T:FLibCore.Common.Event`1">
+            <summary>
+            Provides a wrapper around <typeparamref name="SafeEvent">SafeEvent<typeparamref name="T"></typeparamref></typeparamref> 
+            so that the Invoke method is not available to subscribers.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:FLibCore.Common.EnumerationExtensions.Description(System.Enum)">
+            <summary>
+            Gets the value of the Description attribute of a single enum member.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

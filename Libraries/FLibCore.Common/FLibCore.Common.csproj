@@ -13,4 +13,8 @@
     <DocumentationFile>D:\Data\Repos\eulercircles\FLibCore\Libraries\FLibCore.Common\FLibCore.Common.xml</DocumentationFile>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y /q /f &quot;$(TargetDir)$(TargetName).*&quot; &quot;D:\Data\Assemblies\$(SolutionName)\$(ConfigurationName)\$(ProjectName)\$(ProjectName).*&quot;" />
+  </Target>
+
 </Project>
