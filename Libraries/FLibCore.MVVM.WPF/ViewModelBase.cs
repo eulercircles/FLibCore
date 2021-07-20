@@ -14,7 +14,11 @@ namespace FLibCore.MVVM.WPF
 		public IMediator Mediator
 		{
 			get => (IMediator)GetValue(_mediatorProperty);
-			set => SetValue(_mediatorProperty, value);
+			set
+			{
+				SetValue(_mediatorProperty, value);
+				OnSetMediator();
+			}
 		}
 
 		private static readonly DependencyProperty _dialogProviderProperty
@@ -22,13 +26,21 @@ namespace FLibCore.MVVM.WPF
 		public IDialogProvider DialogProvider
 		{
 			get => (IDialogProvider)GetValue(_dialogProviderProperty);
-			set => SetValue(_dialogProviderProperty, value);
+			set
+			{
+				SetValue(_dialogProviderProperty, value);
+				OnSetDialogProvider();
+			}
 		}
 		#endregion Dependency Properties
 
 		public virtual void Initialize() { }
 
 		public virtual void UnInitialize() { }
+
+		protected virtual void OnSetMediator() { }
+
+		protected virtual void OnSetDialogProvider() { }
 
 		#region INotifyPropertyChanged Implementation
 		private PropertyChangedEventHandler _propertyChanged;
