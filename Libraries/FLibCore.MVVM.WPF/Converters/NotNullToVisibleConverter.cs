@@ -3,9 +3,9 @@ using System.Windows;
 using System.Windows.Data;
 using System.Globalization;
 
-using static FLib.MVVM.Messages;
+using static FLibCore.MVVM.Messages;
 
-namespace FLib.MVVM.Converters
+namespace FLibCore.MVVM.Converters
 {
 	/// <summary>
 	/// Converts the bound object to a Visibility value based on whether the object is null.  Returns Visible if the object

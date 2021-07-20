@@ -4,9 +4,9 @@ using System.Windows.Data;
 
 using System.Windows.Media;
 
-using static FLib.Common.Messages;
+using static FLibCore.Common.Messages;
 
-namespace FLib.MVVM.Converters
+namespace FLibCore.MVVM.Converters
 {
 	public class DecimalToColorConverter : IValueConverter
 	{

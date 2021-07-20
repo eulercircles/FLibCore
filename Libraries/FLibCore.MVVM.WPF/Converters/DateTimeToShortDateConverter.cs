@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace FLib.MVVM.Converters
+namespace FLibCore.MVVM.Converters
 {
 	public class DateTimeToShortDateConverter : IValueConverter
 	{

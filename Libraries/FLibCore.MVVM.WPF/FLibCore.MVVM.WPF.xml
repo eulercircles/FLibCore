@@ -4,5 +4,61 @@
         <name>FLibCore.MVVM.WPF</name>
     </assembly>
     <members>
+        <member name="T:FLibCore.MVVM.Converters.DoubleToVisibleConverter">
+            <summary>
+            Converts a bound integer value to a Visibility - Visible if the bound value is greater than or equal to zero, 
+            Collapsed otherwise
+            </summary>
+        </member>
+        <member name="M:FLibCore.MVVM.Converters.DoubleToVisibleConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FLibCore.MVVM.Converters.DoubleToVisibleConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FLibCore.MVVM.Converters.FalseToVisibleConverter">
+            <summary>
+            Converts a bound boolean value to an equivalent Visiblity value:
+            Visible if the boolean is false, collapsed if true.
+            </summary>
+        </member>
+        <member name="T:FLibCore.MVVM.Converters.IntToVisibleConverter">
+            <summary>
+            Converts a bound integer value to a Visibility - Visible if the bound value is greater than or equal to zero, 
+            Collapsed otherwise
+            </summary>
+        </member>
+        <member name="T:FLibCore.MVVM.Converters.NotNullToVisibleConverter">
+            <summary>
+            Converts the bound object to a Visibility value based on whether the object is null.  Returns Visible if the object
+            is not null, Collapsed otherwise.
+            </summary>
+        </member>
+        <member name="T:FLibCore.MVVM.Converters.NullToVisibleConverter">
+            <summary>
+            Converts the bound object to a Visibility value based on whether the object is null.  Returns Visible if the object
+            is null, Collapsed otherwise.
+            </summary>
+        </member>
+        <member name="T:FLibCore.MVVM.Converters.TrueToVisibleConverter">
+            <summary>
+            Converts a bound boolean value to an equivalent Visiblity value: 
+            Visible if the boolean is true, collapsed if false.
+            </summary>
+        </member>
     </members>
 </doc>

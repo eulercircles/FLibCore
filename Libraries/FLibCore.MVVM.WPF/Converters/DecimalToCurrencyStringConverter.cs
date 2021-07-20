@@ -2,10 +2,10 @@
 using System.Windows.Data;
 using System.Globalization;
 
-using static FLib.Common.Messages;
-using static FLib.MVVM.Messages;
+using static FLibCore.Common.Messages;
+using static FLibCore.MVVM.Messages;
 
-namespace FLib.MVVM.Converters
+namespace FLibCore.MVVM.Converters
 {
 	public class DecimalToCurrencyStringConverter : IValueConverter
 	{

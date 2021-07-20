@@ -2,10 +2,10 @@
 using System.Globalization;
 using System.Windows.Data;
 
-using FLib.Common;
-using static FLib.MVVM.Messages;
+using FLibCore.Common;
+using static FLibCore.MVVM.Messages;
 
-namespace FLib.MVVM.Converters
+namespace FLibCore.MVVM.Converters
 {
 	public class IntToPercentStringConverter : IValueConverter
 	{

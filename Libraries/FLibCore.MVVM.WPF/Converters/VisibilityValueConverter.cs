@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Data;
 
-namespace FLib.MVVM.Converters
+namespace FLibCore.MVVM.Converters
 {
 	public sealed class VisibilityValueConverter : IValueConverter
 	{

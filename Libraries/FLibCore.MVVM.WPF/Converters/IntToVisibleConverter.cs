@@ -3,9 +3,9 @@ using System.Windows;
 using System.Windows.Data;
 using System.Globalization;
 
-using static FLib.MVVM.Messages;
+using static FLibCore.MVVM.Messages;
 
-namespace FLib.MVVM.Converters
+namespace FLibCore.MVVM.Converters
 {
 	/// <summary>
 	/// Converts a bound integer value to a Visibility - Visible if the bound value is greater than or equal to zero, 
