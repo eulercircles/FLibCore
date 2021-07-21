@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 namespace FLibCore.MVVM
 {
-	public class Mediator : IMediator
+	public class MediatorService : IMediatorService
 	{
 		private Dictionary<Type, Delegate> _registry;
 
-		public Mediator()
+		public MediatorService()
 		{
 			_registry = new Dictionary<Type, Delegate>();
 		}

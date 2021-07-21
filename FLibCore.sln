@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLibCore.MVVM.WPF", "Libraries\FLibCore.MVVM.WPF\FLibCore.MVVM.WPF.csproj", "{FC3FC10B-7DE3-4A05-9AC3-3C1B7C658FF8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5807FEA9-3966-4131-ACB1-CA1BC731DA3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLibCore.MVVM.Tests", "FLibCore.MVVM.Tests\FLibCore.MVVM.Tests.csproj", "{6B031E78-CBA8-4F10-8508-B705C2BCB926}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,10 @@ Global
 		{FC3FC10B-7DE3-4A05-9AC3-3C1B7C658FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC3FC10B-7DE3-4A05-9AC3-3C1B7C658FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC3FC10B-7DE3-4A05-9AC3-3C1B7C658FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B031E78-CBA8-4F10-8508-B705C2BCB926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B031E78-CBA8-4F10-8508-B705C2BCB926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B031E78-CBA8-4F10-8508-B705C2BCB926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B031E78-CBA8-4F10-8508-B705C2BCB926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

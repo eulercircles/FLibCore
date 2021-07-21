@@ -6,41 +6,19 @@ using System.ComponentModel;
 
 namespace FLibCore.MVVM.WPF
 {
-	public abstract class ViewModelBase : DependencyObject, INotifyPropertyChanged //, IDisposable
+	public abstract class ViewModelBase : DependencyObject, INotifyPropertyChanged
 	{
-		#region Dependency Properties
-		private static readonly DependencyProperty _mediatorProperty
-			= DependencyProperty.Register(nameof(Mediator), typeof(IMediator), typeof(ViewModelBase));
-		public IMediator Mediator
+		private static readonly DependencyProperty _serviceContainerProperty
+			= DependencyProperty.Register(nameof(ServiceContainer), typeof(IServiceContainer), typeof(ViewModelBase), new PropertyMetadata(null));
+		public IServiceContainer ServiceContainer
 		{
-			get => (IMediator)GetValue(_mediatorProperty);
-			set
-			{
-				SetValue(_mediatorProperty, value);
-				OnSetMediator();
-			}
+			get => (IServiceContainer)GetValue(_serviceContainerProperty);
+			set => SetValue(_serviceContainerProperty, value);
 		}
-
-		private static readonly DependencyProperty _dialogProviderProperty
-			= DependencyProperty.Register(nameof(DialogProvider), typeof(IDialogProvider), typeof(ViewModelBase));
-		public IDialogProvider DialogProvider
-		{
-			get => (IDialogProvider)GetValue(_dialogProviderProperty);
-			set
-			{
-				SetValue(_dialogProviderProperty, value);
-				OnSetDialogProvider();
-			}
-		}
-		#endregion Dependency Properties
 
 		public virtual void Initialize() { }
 
 		public virtual void UnInitialize() { }
-
-		protected virtual void OnSetMediator() { }
-
-		protected virtual void OnSetDialogProvider() { }
 
 		#region INotifyPropertyChanged Implementation
 		private PropertyChangedEventHandler _propertyChanged;
