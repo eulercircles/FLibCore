@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Libraries\FLibCore.MVVM\FLibCore.MVVM.csproj" />
+    <ProjectReference Include="..\..\Libraries\FLibCore.MVVM\FLibCore.MVVM.csproj" />
   </ItemGroup>
 
 </Project>
