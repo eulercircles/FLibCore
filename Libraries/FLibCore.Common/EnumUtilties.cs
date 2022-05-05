@@ -19,8 +19,7 @@ namespace FLibCore.Common
 		public static Dictionary<string, T> GetEnumDescriptions<T>()
 		{
 			var fields = typeof(T).GetFields().Where(info => info.FieldType.Equals(typeof(T)));
-			var enumsAndDescriptions = from field in fields
-																 select new KeyValuePair<string, T>(GetEnumDescription(field), (T)Enum.Parse(typeof(T), field.Name, false));
+			var enumsAndDescriptions = from field in fields select new KeyValuePair<string, T>(GetEnumDescription(field), (T)Enum.Parse(typeof(T), field.Name, false));
 
 			var results = new Dictionary<string, T>();
 			foreach (KeyValuePair<string, T> pair in enumsAndDescriptions) results.Add(pair.Key, pair.Value);
@@ -32,8 +31,8 @@ namespace FLibCore.Common
 		private static string GetEnumDescription(FieldInfo field)
 		{
 			DescriptionAttribute[] attributes =
-				(DescriptionAttribute[])field.GetCustomAttributes(
-					typeof(DescriptionAttribute), false);
+					(DescriptionAttribute[])field.GetCustomAttributes(
+							typeof(DescriptionAttribute), false);
 			if (attributes.Length > 0) { return attributes[0].Description; }
 			else { return field.Name; }
 		}
