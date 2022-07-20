@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.202
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLibCore.Common", "Libraries\FLibCore.Common\FLibCore.Common.csproj", "{2284773B-0F37-4352-BEB1-EBA79159C099}"
 EndProject
@@ -18,6 +18,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLibCore.MVVM.Tests", "Tests\FLibCore.MVVM.Tests\FLibCore.MVVM.Tests.csproj", "{98EA58F9-F632-4842-A94F-3D517485276F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLibCore.Generation.Tests", "Tests\FLibCore.Generation.Tests\FLibCore.Generation.Tests.csproj", "{A0C64469-5752-48E4-9144-1059D4CA18A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLibCore.Music", "Libraries\FLibCore.Music\FLibCore.Music.csproj", "{502717EA-B3B2-40DD-98C4-D7FC4977BA40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLibCore.Music.Tests", "Tests\FLibCore.Music.Tests\FLibCore.Music.Tests.csproj", "{FB9D72A8-54F2-4BC0-A54F-CF4E07E48008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SongComposer", "SongComposer\SongComposer.csproj", "{F99C4A13-88DF-4E9B-A556-A7C8AD0A41B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +55,18 @@ Global
 		{A0C64469-5752-48E4-9144-1059D4CA18A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0C64469-5752-48E4-9144-1059D4CA18A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0C64469-5752-48E4-9144-1059D4CA18A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502717EA-B3B2-40DD-98C4-D7FC4977BA40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502717EA-B3B2-40DD-98C4-D7FC4977BA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502717EA-B3B2-40DD-98C4-D7FC4977BA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502717EA-B3B2-40DD-98C4-D7FC4977BA40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB9D72A8-54F2-4BC0-A54F-CF4E07E48008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB9D72A8-54F2-4BC0-A54F-CF4E07E48008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB9D72A8-54F2-4BC0-A54F-CF4E07E48008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB9D72A8-54F2-4BC0-A54F-CF4E07E48008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99C4A13-88DF-4E9B-A556-A7C8AD0A41B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99C4A13-88DF-4E9B-A556-A7C8AD0A41B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99C4A13-88DF-4E9B-A556-A7C8AD0A41B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99C4A13-88DF-4E9B-A556-A7C8AD0A41B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +78,8 @@ Global
 		{31D5347F-85D9-4262-BF4C-FC8B28CF6F83} = {05122FE9-5EEA-41A8-801B-A7A59702BD2E}
 		{98EA58F9-F632-4842-A94F-3D517485276F} = {5807FEA9-3966-4131-ACB1-CA1BC731DA3B}
 		{A0C64469-5752-48E4-9144-1059D4CA18A5} = {5807FEA9-3966-4131-ACB1-CA1BC731DA3B}
+		{502717EA-B3B2-40DD-98C4-D7FC4977BA40} = {05122FE9-5EEA-41A8-801B-A7A59702BD2E}
+		{FB9D72A8-54F2-4BC0-A54F-CF4E07E48008} = {5807FEA9-3966-4131-ACB1-CA1BC731DA3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {54EE1CEC-78A4-4815-94AB-F1B77FC9D1FB}

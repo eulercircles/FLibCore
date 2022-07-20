@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\FLibCore.Common\FLibCore.Common.csproj" />
+    <ProjectReference Include="..\Libraries\FLibCore.Generation\FLibCore.Generation.csproj" />
+    <ProjectReference Include="..\Libraries\FLibCore.Music\FLibCore.Music.csproj" />
+  </ItemGroup>
+
+</Project>
